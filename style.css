@@ -1,0 +1,17 @@
+/* Centers the instructions text in the middle of the screen */
+/* Sets the background color to black  */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+/* Sets the Font Family, Size, and Colour */
+.instructions {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, serif;
+    font-size: 16px;
+    color: white;
+  }
