@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/joystick.png">
     <title>Odin Project Rock Paper Scissors Game</title>
 </head>
 <body>
-    <div class="instructions">
-        <p>This game can be played entirely on the browser's Developer Console! To open it:</p>
-        <ol> 
-            <li><strong>Right-click</strong> with your mousepad (or mouse) on any area of the page, and select "Inspect"</li>
-            <li><strong>Navigate</strong> to the "Console" tab.</li>
-            <li><strong>Follow</strong> the prompts in the console to play the game.</li>
-        </ol>
-        <p>Alternatively, depending on your OS, you can use the below keyboard shortcuts to open the Developer Console:</p>
-        <ul>
-            <li><strong>Windows Edge and Linux:</strong> Ctrl + Shift + J</li>
-            <li><strong>Mac Safari:</strong> Command + Option + J</li>
-            <li><strong>Google Chrome:</strong> Ctrl + Alt + I</li>
-        </ul>
-        <p>Once the game is finished, refresh the page to play again, or type <strong>playGame()</strong> and Enter in the console to restart the game.</p>
-        <p>Have Fun!</p>
+    <div class="hugeContainer">
+        <div class="resultContainer"></div>
+            <div class="resultGame"></div>
+            <div class="chooseMove">Choose your Move</div>
+            <div class="gameEnd"></div>
+            <div class="tryAgain">
+                <button>Try Again!</button>
+            </div>
+        </div>
+
+        <div class="mainContainer">
+            <div class="scoreContainer">
+                <h1 class="player-score"></h1>
+                <h1 class="machine-score"></h1>
+            </div>
+
+            <div class="uiMovesContainer">
+                <button><img src="img/Rock.png" alt="Rock"></button>
+                <button><img src="img/Paper.png" alt="Paper"></button>
+                <button><img src="img/Scissors.png" alt="Scissors"></button>
+            </div>
+        </div>
     </div>
+    <footer>
+        <p>Created by <a href="https://github.com/ArsenLeNaslov">ArsenLeNaslov</a> for The Odin Project 🎴 </p>
+        <p>Icons by <a href="https://www.vecteezy.com/vector-art/691497-rock-paper-scissors-neon-icons" title="rps icons">Pien Duijverman @ Vectezy, all right reserved</a></p>
+        <p>Favicon by <a href="https://www.freepnglogos.com/images/games-21612.html" title="favicon icon">John D @ Free Png Logos, all right reserved</a></p>
+    </footer>
     <script src="javascript.js"></script>
 </body>
 </html>
+
