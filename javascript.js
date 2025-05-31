@@ -152,6 +152,19 @@ function newGame() {
   playAg.addEventListener("click", tryAgain);
 }
 
+// Music Control Setup
+const music = document.getElementById("bg-music");
+const toggleMusicBtn = document.getElementById("toggle-music");
+
+if (toggleMusicBtn && music) {
+    toggleMusicBtn.textContent = music.muted ? "🔇" : "🎷";
+
+    toggleMusicBtn.addEventListener("click", () => {
+        music.muted = !music.muted;
+        toggleMusicBtn.textContent = music.muted ? "🔇" : "🎷";
+    });
+}
+
 startGame();
 
 
