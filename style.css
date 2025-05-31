@@ -73,11 +73,6 @@ body {
   text-shadow: 0 0 5px white, 0 0 10px blue, 0 0 15px darkcyan, 0 0 20px teal, 0 0 25px black;
 }
 
-.result .loseTxt {
-  color:  red;
-  text-shadow: 0 0 5px white, 0 0 10px red, 0 0 15px darkred, 0 0 20px darkred, 0 0 25px black;
-}
-
 .tryAgain button {
   font-family: "Zen Dots", sans-serif;
   color: black;
