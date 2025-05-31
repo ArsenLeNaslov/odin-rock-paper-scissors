@@ -31,7 +31,13 @@ function startGame() {
         if (uiMove.target.nodeName.toLowerCase() === "img") {
             humanChoice = uiMove.target.alt.toLowerCase();
             makeMove.style.display = "none";
+        
+            if (music.paused) {
+            music.play().catch((err) => {
+                console.warn("Music play failed:", err);
+            });
         }
+    }
             machineChoice = getMachineChoice();
             playRound();
         };
