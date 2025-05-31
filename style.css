@@ -1,17 +1,177 @@
-/* Centers the instructions text in the middle of the screen */
-/* Sets the background color to black  */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  background-color: black;
+/* 1. Font face */
+@font-face {
+  font-family: "Zen Dots";
+  src: url("./fonts/ZenDots-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Sets the Font Family, Size, and Colour */
-.instructions {
-    font-family: Verdana, Geneva, Tahoma, sans-serif, serif;
-    font-size: 16px;
-    color: white;
-  }
+/* 2. Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/outer-space.png");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* 3. Main layout */
+#hugeContainer {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 58px;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  height: 25vh;
+  width: 50vw;
+  flex-direction: column;
+  gap: 4vh;
+}
+
+.uiMove {
+  width: 50vw;
+  height: 25vh;
+  justify-content: space-around;
+}
+
+.score {
+  justify-content: space-around;
+  font-family: "Zen Dots", sans-serif;
+  font-size: 1.3em;
+  color: black;
+}
+
+.result {
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Zen Dots", sans-serif;
+  font-size: 1.2em;
+  gap: 1em;
+  width: 50vw;
+  height: 25vh;
+}
+
+.result .winTxt {
+  color: cyan;
+  text-shadow: 0 0 5px white, 0 0 10px blue, 0 0 15px darkcyan, 0 0 20px teal, 0 0 25px black;
+}
+
+.result .loseTxt {
+  color:  red;
+  text-shadow: 0 0 5px white, 0 0 10px red, 0 0 15px darkred, 0 0 20px darkred, 0 0 25px black;
+}
+
+.tryAgain button {
+  font-family: "Zen Dots", sans-serif;
+  color: black;
+  font-size: 2rem;
+  padding: 3px 6px;
+  border-radius: 5em;
+  border: 2px solid darkblue;
+  animation: fade-inout 2s infinite alternate;
+  transition: 0.4s;
+  margin-bottom: 2vh;
+}
+
+.tryAgain {
+  display: flex;
+  color: black;
+  justify-content: center;
+}
+
+.tryAgain > button {
+  background-color: lightblue;
+  text-shadow: 0 0 5px white, 0 0 10px blue, 0 0 15px darkblue, 0 0 20px darkblue, 0 0 25px black;
+}
+
+.tryAgain > button:hover {
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.resultGame,
+.gameEnd {
+  font-size: 1.6em;
+  text-align: center;
+  text-shadow: 0 0 5px white, 0 0 10px blue, 0 0 15px blue, 0 0 20px darkblue, 0 0 25px black;
+}
+
+@keyframes fade-inout {
+  0% { opacity: 1; }
+  100% { opacity: 0.1; }
+}
+
+.makeMove {
+  animation: fade-inout 3s infinite alternate;
+  font-family: "Zen Dots", sans-serif;
+  font-size: 4em;
+  text-shadow: 0 0 5px white, 0 0 10px darkmagenta, 0 0 15px darkmagenta;
+  text-align: center;
+  color: black;
+}
+
+.resultGame{
+  text-shadow: 0 0 5px white, 0 0 10px darkorange, 0 0 15px darkorange, 0 0 20px darkorange, 0 0 25px darkorange;
+}
+
+.gameEnd {
+  text-shadow: 0 5px white, 0 0 10px #66ffe0, 0 0 15px #33ffe6, 0 0 20px #00ffd0, 0 0 25px #00ffd0;
+}
+
+.score,
+footer {
+  text-shadow: 0 0 5px white, 0 0 10px darkmagenta, 0 0 15px darkmagenta, 0 0 20px darkmagenta, 0 0 25px darkmagenta;
+}
+
+img {
+  height: 25vh;
+  filter: drop-shadow(0 0 0.75rem yellow) drop-shadow(0 0 0.75em darkblue);
+  transition: 0.3s;
+}
+
+img:hover {
+  cursor: pointer;
+  height: 27vh;
+  filter: drop-shadow(0 0 0.9rem blue) drop-shadow(0 0 0.9em darkblue);
+}
+
+/* 4. Footer */
+footer {
+  font-family: "Zen Dots", Arial, sans-serif;
+  font-size: 1em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: darkmagenta;
+  font-weight: bold;
+}
+
+
+
+
