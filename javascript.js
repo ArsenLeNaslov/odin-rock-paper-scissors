@@ -132,8 +132,7 @@ function playGame() {
 function newGame() {
   buttonContainer.removeEventListener("click", clickHandler);
   if (tryAgain) {
-    playAg.replaceWith(playAg.cloneNode(true));
-    playAg = document.querySelector(".tryAgain");
+    playAg = removeEventListener("click", tryAgain);
   }
 
   tryAgain = (playAg) => {
