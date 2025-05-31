@@ -153,9 +153,9 @@ footer {
   font-size: 1em;
   position: fixed;
   left: 0;
-  bottom: 0;
   width: 100%;
   height: 10vh;
+  bottom: 12px;
   text-align: center;
 }
 
@@ -167,6 +167,26 @@ a:active {
   font-weight: bold;
 }
 
+/* 5. Music Button */
+#toggle-music {
+  font-size: 2rem;
+  padding: 0.3em 0.5em;
+  margin: 0.5em;
+  background-color: #222;
+  color: white;
+  border-radius: 5em;
+  transition: background-color 0.3s ease;
+}
 
+#toggle-music:hover {
+  cursor: pointer;
+  height: 23vh;
+  filter: drop-shadow(0 0 0.75rem darkorange) drop-shadow(0 0 0.75em darkblue);
+  transition: 0.5s;
+}
 
+#toggle-music > button {
+  background-color: lightblue;
+  text-shadow: 0 0 5px white, 0 0 10px blue, 0 0 15px darkblue, 0 0 20px darkblue, 0 0 25px black;
+}
 
