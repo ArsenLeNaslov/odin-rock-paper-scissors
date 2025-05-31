@@ -79,7 +79,7 @@ body {
   font-size: 2rem;
   padding: 3px 6px;
   border-radius: 5em;
-  border: 2px solid darkblue;
+  border: 5px solid black;
   animation: fade-inout 2s infinite alternate;
   transition: 0.4s;
   margin-bottom: 2vh;
@@ -169,24 +169,27 @@ a:active {
 
 /* 5. Music Button */
 #toggle-music {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
-  padding: 0.3em 0.5em;
+  bottom: 2vh;
+  right: 2vw;
+  width: 60px;
+  height: 60px;
   margin: 0.5em;
   background-color: #222;
   color: white;
-  border-radius: 5em;
+  border-radius: 50%;
   transition: background-color 0.3s ease;
+  z-index: 1000;
 }
 
 #toggle-music:hover {
   cursor: pointer;
-  height: 23vh;
+  transform: scale(1.5);
   filter: drop-shadow(0 0 0.75rem darkorange) drop-shadow(0 0 0.75em darkblue);
-  transition: 0.5s;
-}
-
-#toggle-music > button {
-  background-color: lightblue;
-  text-shadow: 0 0 5px white, 0 0 10px blue, 0 0 15px darkblue, 0 0 20px darkblue, 0 0 25px black;
+  transition: 0.3s;
 }
 
