@@ -1,4 +1,7 @@
 # odin-rock-paper-scissors
 Odin Project's JavaScript exercise game "Rock Paper Scissors"
 
-Basic version of the game. The instructions are on screen while the actual game is played through a floating prompt, and results printed on Developer Console.
+The first version of the game was a basic one. The instructions were written on screen, while the actual game was played through a floating prompt, and results printed on the Developer Console.
+
+The Game was then updated with UI elements, EventListeners, and DOM manipulation, allowing the player to run the game by interacting with visual element on screen.
+<img width="952" alt="image" src="https://github.com/user-attachments/assets/1f97e8ac-e38c-4b2b-8997-376af2fc2eeb" />
