@@ -1,4 +1,4 @@
-// Declare Players' score variables and the number of rounds played
+// Declare Players' score variables and the Number of Rounds played
 let humanScore = 0;
 let machineScore = 0;
 let roundResult;
@@ -81,7 +81,7 @@ function playRound() {
     playGame();
 }
 
-// Text at game's end
+// Text shown to player at Game's End
 const arrWin = [
     "You Won! The Machine lost the game!🪐",
     "The Machine is defeated and you stopped their conquest! Congratulations!🎆",
