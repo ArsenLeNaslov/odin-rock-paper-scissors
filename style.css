@@ -46,9 +46,24 @@ body {
 }
 
 .uiMove {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2vw;
   width: 50vw;
   height: 25vh;
-  justify-content: space-around;
+}
+
+.uiMove > button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .score {
@@ -193,3 +208,36 @@ a:active {
   transition: 0.3s;
 }
 
+/* Adjustment for small screens */
+@media (max-width: 700px) {
+  #hugeContainer, .main, .result, .uiMove {
+    width: 98vw;
+    min-width: 0;
+    height: auto;
+    padding: 0;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  img {
+    height: 12vh;
+    max-width: 90vw;
+  }
+
+  .makeMove {
+    font-size: 2em;
+  }
+
+  footer {
+    position: static;
+    height: auto;
+    padding: 1em 0 2em 0;
+    font-size: 0.9em;
+  }
+
+  #toggle-music {
+    position: static;
+    margin: 1em auto;
+    display: block;
+  }
+}
