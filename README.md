@@ -1,5 +1,7 @@
-# odin-rock-paper-scissors
+# Odin Rock Paper Scissors
 Odin Project's JavaScript exercise game "Rock Paper Scissors"
+
+A digital space-themed version of this classic chinese game.
 
 The first version of the game was a basic one. The instructions were written on screen, while the actual game was played through a floating prompt, and results printed on the Developer Console.
 
